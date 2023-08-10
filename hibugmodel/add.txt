@@ -1,0 +1,4 @@
+For chat module
+
+Contact us to get the model parameter.
+And follow the instruction to put model parameter in this folder to be connected!

@@ -1,0 +1,40 @@
+splitpart:func main(){
+    slice := []int{1,2,3,4}
+    res:= []*int{}
+    for _,v := range slice{
+        res = append(res,&v)
+    }
+    for _,v := range res{
+        fmt.Println(*v)
+    }
+}
+splitpart:由于 `res` 切片保存了相同的地址，最终在循环结束后，`res` 切片中的元素都指向 `v` 的最后一个值，即 `4`。
+因此，当遍历 `res` 切片并打印指针所指向的值时，输出结果都是 `4`。
+
+splitpart:请为下列代码debug，指出错误，并给出修改后的代码，使用中文：
+func main(){
+    slice := []int{1,2,3,4}
+    res:= []*int{}
+    for _,v := range slice{
+        res = append(res,&v)
+    }
+    for _,v := range res{
+        fmt.Println(*v)
+    }
+}
+splitpart:由于 `res` 切片保存了相同的地址，最终在循环结束后，`res` 切片中的元素都指向 `v` 的最后一个值，即 `4`。
+因此，当遍历 `res` 切片并打印指针所指向的值时，输出结果都是 `4`。
+
+splitpart:Please debug the following code and provide the modified code using English:
+func main(){
+    slice := []int{1,2,3,4}
+    res:= []*int{}
+    for _,v := range slice{
+        res = append(res,&v)
+    }
+    for _,v := range res{
+        fmt.Println(*v)
+    }
+}
+splitpart:由于 `res` 切片保存了相同的地址，最终在循环结束后，`res` 切片中的元素都指向 `v` 的最后一个值，即 `4`。
+因此，当遍历 `res` 切片并打印指针所指向的值时，输出结果都是 `4`。

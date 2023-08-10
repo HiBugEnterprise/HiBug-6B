@@ -1,0 +1,11 @@
+This embedding model is from hfl/chinese-lert-large
+Please get pytorch_model.bin and model.safetensors of hfl/chinese-lert-large further more
+
+@article{cui2022lert,
+      title={LERT: A Linguistically-motivated Pre-trained Language Model}, 
+      author={Cui, Yiming and Che, Wanxiang and Wang, Shijin and Liu, Ting},
+      year={2022},
+      eprint={2211.05344},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
